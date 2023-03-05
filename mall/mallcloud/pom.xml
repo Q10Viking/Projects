@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>mall-admin</module>
+        <module>mall-common</module>
     </modules>
 
     <properties>
@@ -17,6 +18,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <mall.common.version>${project.version}</mall.common.version>
     </properties>
 
     <dependencyManagement>
@@ -31,4 +33,11 @@
         </dependencies>
     </dependencyManagement>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.hzz</groupId>
+            <artifactId>mall-common</artifactId>
+            <version>${mall.common.version}</version>
+        </dependency>
+    </dependencies>
 </project>
