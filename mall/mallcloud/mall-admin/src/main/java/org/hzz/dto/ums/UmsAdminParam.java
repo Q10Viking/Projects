@@ -1,5 +1,9 @@
 package org.hzz.dto.ums;
 
+import lombok.Data;
+import lombok.ToString;
+
+@Data
 public class UmsAdminParam {
     private String username;
     private String password;
@@ -7,4 +11,6 @@ public class UmsAdminParam {
     private String email;
     private String nickName;
     private String note;
+
+
 }
